@@ -8,15 +8,17 @@ export default function Nav(props) {
         onClick={() => {
           navigate("home");
         }}
+        className="homeButton"
       >
-        <span> Home</span>
+        Home
       </div>
       <div
         onClick={() => {
           navigate("shop");
         }}
+        className="shopButton"
       >
-        <span> Shop</span>
+        Shop
       </div>
       <Cart className="cart" totalCost={props.totalCost}></Cart>
     </nav>
