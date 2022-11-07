@@ -12,7 +12,15 @@ let testItem = {
   image: Thumbs,
 };
 
-let shopItems = [testItem];
+let shopItems = [
+  testItem,
+  testItem,
+  testItem,
+  testItem,
+  testItem,
+  testItem,
+  testItem,
+];
 
 export default function Shop(props) {
   return (
