@@ -6,13 +6,13 @@ export default function ItemCounter(props) {
         onClick={props.increaseFunc}
         className="itemCounterButton itemCountUp"
       >
-        up
+        ▲
       </button>
       <button
         onClick={props.decreaseFunc}
         className="itemCounterButton itemCountDown"
       >
-        down
+        ▼
       </button>
     </div>
   );

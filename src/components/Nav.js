@@ -18,7 +18,7 @@ export default function Nav(props) {
       >
         <span> Shop</span>
       </div>
-      <Cart className="cart" itemCount={props.itemCount}></Cart>
+      <Cart className="cart" totalCost={props.totalCost}></Cart>
     </nav>
   );
 }
