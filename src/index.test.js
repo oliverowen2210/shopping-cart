@@ -57,4 +57,15 @@ describe("shop route", () => {
     render(<Shop />);
     expect(screen.queryByText("No items were found.")).not.toBe(null);
   });
+
+  it("counts up and down correctly", () => {
+    render(<Shop />);
+    let countUp = screen.getByRole("button", { name: "▲" });
+    let countDown = screen.getByRole("button", { name: "▼" });
+    userEvent.click(countDown);
+    userEvent.click(countDown);
+    userEvent.click(countUp);
+    userEvent.click(countUp);
+    expect(screen.queryByText("3")).not.toBe(null);
+  });
 });
